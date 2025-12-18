@@ -1,0 +1,15 @@
+banana_madura
+banana_podrida
+banana_verde
+mango_maduro
+mango_podrido
+mango_verde
+manzana_madura
+manzana_podrida
+manzana_verde
+naranja_madura
+naranja_podrida
+naranja_verde
+papaya_madura
+papaya_podrida
+papaya_verde
