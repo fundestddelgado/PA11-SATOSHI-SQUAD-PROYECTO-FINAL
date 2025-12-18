@@ -83,7 +83,7 @@ def obtener_emoji_fruta(fruta):
     }
     return emojis.get(fruta.lower(), "🍏")  # Default: manzana verde
 
-# Mapeo de colores por fruta
+# Mapeo de colores por fruta (fondo claro, texto oscuro, borde)
 def obtener_colores_fruta(fruta):
     """Retorna colores específicos para cada fruta manteniendo contraste"""
     colores = {
@@ -113,14 +113,14 @@ def obtener_colores_fruta(fruta):
             "borde": "#FF9800"        # Naranja melocotón medio
         }
     }
-    # Default: verde
+    # Default: verde (como estaba originalmente)
     return colores.get(fruta.lower(), {
         "fondo": "#E8F5E9",
         "texto": "#1B5E20",
         "borde": "#4CAF50"
     })
 
-# Función para gráficas de barras verticales (Top 5) con colores por fruta
+# Gráficas de barras verticales (Top 5) con colores por fruta
 def grafica_top5_barras(clases, probabilidades):
     """
     Genera una gráfica de barras verticales con el Top 5.
@@ -178,7 +178,7 @@ def grafica_top5_barras(clases, probabilidades):
 # TÍTULO
 st.markdown('<h1 class="main-title">🍎 Clasificador de Madurez de Frutas</h1>', unsafe_allow_html=True)
 st.markdown(
-    '<p class="sub-title">Modelo IA con Transfer Learning (MobileNetV2)</p>',
+    '<p class="sub-title">Li Chao • Diego Corrales • Hassan Rada • Nayim Rodríguez • Valentín Rodríguez</p>',
     unsafe_allow_html=True
 )
 
